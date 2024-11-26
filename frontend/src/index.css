@@ -1,3 +1,9 @@
+/* global variables */
+:root{
+  --white: #ffffff;
+  --dark: #333
+}
+
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20;
@@ -10,64 +16,19 @@ html {
 }
 
 body.light {
-  background-color: #ffffff;
-  color: hsl(0, 5%, 11%);
-  transition: background-color 0.3s, color 0.3s;
+  --text-color: var(--dark);
+  --background-color: var(--white);
 }
 
 body.dark {
-  background-color: hsl(0, 5%, 11%);
-  color: #ffffff;
+  --text-color: var(--white);
+  --background-color: var(--dark);
 }
 
-/* Main styles */
-.main{
-  border: solid;
-  display: flex;
-  flex: 1;
-  padding: 20px;
-}
-
-main section {
-  flex: 3;
-  padding: 20px;
-  margin-right: 10px;
-}
-
-aside {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Navigation menu styles */
-.nav{
-  border:solid;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 10px;
-  justify-content: right;
-}
-
-nav ul li {
-  margin: 0 5px;
-}
-
-
-nav ul li a {
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer{
-  border:solid;
-  text-align: left;
-  padding: 10px;
+body {
+  color: var(--text-color);
+  background-color: var(--background-color); 
+  transition: background-color 0.3s; 
 }
 
 /* Button styles */
@@ -82,10 +43,12 @@ button {
 
 body.light button {
   background-color: hsl(0, 5%, 11%);
-  color: #fff;
+  color: var(--white);
 }
 
 body.dark button {
-  background-color: #fff;
+  background-color: var(--white);
   color: hsl(0, 5%, 11%);
 }
+
+

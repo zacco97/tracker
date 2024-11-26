@@ -1,0 +1,19 @@
+.main{
+  border: solid;
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+main section {
+  flex: 3;
+  padding: 20px;
+  margin-right: 10px;
+  height: 400px;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+}
+  

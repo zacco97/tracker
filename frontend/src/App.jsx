@@ -1,15 +1,14 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ToggleTheme from "./components/ToggleTheme";
-import Menu from "./components/Menu";
-import Main from "./components/Main";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import ToggleTheme from "./components/ToggleTheme.jsx";
+import Menu from "./components/Menu/Menu.jsx";
+import Main from "./components/Main/Main.jsx";
+
 function App() {
   return (
     <>
-      <div>
-        <Header></Header>
-        <ToggleTheme></ToggleTheme>
-      </div>
+      <ToggleTheme></ToggleTheme>
+      <Header></Header>
       <Menu></Menu>
       <Main></Main>
       <Footer></Footer>

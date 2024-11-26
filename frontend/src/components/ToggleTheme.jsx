@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import "./ToggleTheme.css";
 
 function ToggleTheme() {
   const [theme, SetTheme] = useState("light");
@@ -17,12 +18,18 @@ function ToggleTheme() {
     localStorage.setItem("theme", newTheme);
   }
   return (
-    <div>
-      <div className="grid-item item2">
+    <div className="toggle-theme">
+      <span className="theme-label">
         Switch to {theme === "light" ? "Dark" : "Light"}
-        <input onClick={handleSetTheme} type="checkbox"></input>
+      </span>
+      <label className="switch">
+        <input
+          onChange={handleSetTheme}
+          type="checkbox"
+          checked={theme === "dark"}
+        />
         <span className="slider round"></span>
-      </div>
+      </label>
     </div>
   );
 }
