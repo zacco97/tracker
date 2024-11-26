@@ -1,0 +1,91 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+}
+
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: hsl(0, 5%, 11%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: hsl(0, 5%, 11%);
+  color: #ffffff;
+}
+
+/* Main styles */
+.main{
+  border: solid;
+  display: flex;
+  flex: 1;
+  padding: 20px;
+}
+
+main section {
+  flex: 3;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Navigation menu styles */
+.nav{
+  border:solid;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+  justify-content: right;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer{
+  border:solid;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light button {
+  background-color: hsl(0, 5%, 11%);
+  color: #fff;
+}
+
+body.dark button {
+  background-color: #fff;
+  color: hsl(0, 5%, 11%);
+}
