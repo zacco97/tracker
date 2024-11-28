@@ -1,10 +1,15 @@
 import React from "react";
 import "./Header.css";
+import Menu from "./Menu.jsx";
+import ToggleTheme from "./ToggleTheme.jsx";
+
 function Header() {
   return (
-    <div className="header">
-      <h1>Tracker</h1>
-    </div>
+    <header>
+      <h1>Portfolio</h1>
+      <Menu></Menu>
+      <ToggleTheme></ToggleTheme>
+    </header>
   );
 }
 

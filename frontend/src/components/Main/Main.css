@@ -1,19 +1,28 @@
-.main{
-  border: solid;
+.flex-container {
+  display: -webkit-flex;
   display: flex;
-  flex: 1;
-  padding: 20px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: lightgrey;
+  margin-bottom: 10px;
 }
 
-main section {
-  flex: 3;
-  padding: 20px;
-  margin-right: 10px;
-  height: 400px;
+.flex-item {
+  background-color: cornflowerblue;
+  text-align: center;
+  height: 50px;
+  width: 33%;
+  padding:10px;
+  margin: 10px;
 }
 
-aside {
-  flex: 1;
-  padding: 20px;
+.flex-item span{
+  display: block;
 }
-  
+
+.main .charts{
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: burlywood;
+  height: 100px;
+}

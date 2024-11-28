@@ -1,7 +1,7 @@
-.header{
-    border:solid;
-    padding: 10px;
-    margin: 4px;
-    width: 140px;
-    height: 50px;
+header{
+    display: flex;
+    margin: auto;
+    align-items: center; 
+    background-color: brown;
+    margin-bottom: 10px;
 }

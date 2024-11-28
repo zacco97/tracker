@@ -3,17 +3,23 @@ import "./Main.css";
 function Main() {
   return (
     <div className="main">
-      <main>
-        <section>
-          <h2>Main Content</h2>
-          <p>This is the main content area.</p>
-        </section>
-
-        <aside>
-          <h3>Sidebar</h3>
-          <p>This is the sidebar content.</p>
-        </aside>
-      </main>
+      <div className="flex-container">
+        <div className="flex-item">
+          <span>Investments</span>
+          <span>100€</span>
+        </div>
+        <div className="flex-item">
+          <span>Profits</span>
+          <span>100€</span>
+        </div>
+        <div className="flex-item">
+          <span>Expanses</span>
+          <span>100€</span>
+        </div>
+      </div>
+      <div className="charts">
+        Here you will add some pie charts and otehr charts
+      </div>
     </div>
   );
 }

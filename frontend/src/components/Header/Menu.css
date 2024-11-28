@@ -1,6 +1,5 @@
 /* Base Styles */
 .nav {
-    border:solid;
     display: flex;
     justify-content: space-between;
     align-items: center;

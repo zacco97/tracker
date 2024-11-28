@@ -7,13 +7,13 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20;
+  margin: 10px;
 }
 
 * {
-  margin: 10;
-  padding: 0;
   box-sizing: border-box;
 }
+
 
 body.light {
   --text-color: var(--dark);
@@ -26,6 +26,7 @@ body.dark {
 }
 
 body {
+  overflow: hidden;
   color: var(--text-color);
   background-color: var(--background-color); 
   transition: background-color 0.3s; 
